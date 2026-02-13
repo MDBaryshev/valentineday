@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine Letter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Экран приветствия -->
+    <div id="introScreen">
+        <div class="intro-content">
+            <div class="intro-photo">
+                <img src="main.jpg" alt="Мы">
+            </div>
+            <h1>Для тебя... ❤️</h1>
+            <p>У меня есть небольшой сюрприз внутри</p>
+            <button id="startBtn">Открыть подарок</button>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+    <div id="bgHearts"></div>
+
+    <div class="envelope-wrapper">
+        <div id="envelope" class="close">
+            <div class="front flap"></div>
+            <div class="front pocket"></div>
+            <div class="heart-seal"></div>
+            <div class="letter" id="letterContainer">
+                <!-- 5 карточек: от нижней к верхней -->
+                <div class="paper photo"><img src="photo5.jpg"><p>Люблю тебя! ❤️</p></div>
+                <div class="paper photo"><img src="photo4.jpg"><p>Моё счастье ✨</p></div>
+                <div class="paper photo"><img src="photo3.jpg"><p>Наше лето 🌸</p></div>
+                <div class="paper photo"><img src="photo2.jpg"><p>Лучший момент 📸</p></div>
+                <div class="paper photo"><img src="photo1.jpg"><p>Самая красивая 😍</p></div>
+                <div class="paper text-only">
+                    <div class="content">
+                        <h2>Привет! 💌</h2>
+                        <p>Нажимай на конверт...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button id="resetBtn">Начать сначала</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
